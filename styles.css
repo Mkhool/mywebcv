@@ -320,6 +320,26 @@ section:hover strong {
   box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -20px;
 }
 
+.projet-item {
+display: grid;
+grid-template-columns: 80px 1fr;
+column-gap: 16px;
+row-gap: 12px;
+align-items: start;
+}
+
+
+.projet-item .date {
+margin-top: 35; /* important : sinon ça décale */
+min-width: 0; /* plus besoin ici */
+font-size: 18px;
+}
+
+
+.projet-item .content {
+flex-grow: initial; /* inutile en grid */
+}
+
 .experience-item h2 {
   font-size: 14px;
   text-decoration: underline;
